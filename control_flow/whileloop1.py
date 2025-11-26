@@ -52,5 +52,3 @@ while n != 0:
         break
 print(sum_all)
 
-
-#hi there
