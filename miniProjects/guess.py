@@ -12,13 +12,14 @@ num = randint(1, 50)
 guess = int(input('Guess a number: '))
 l = 0
 
-while guess != num:
-    if l < 10:
-        guess = int(input('Guess another number: '))
+while guess != num and l < 10:
+    if guess < num: 
+        print('Guess is high')
     else: 
-        print('You ran out of guess!')
-        break
+        print('Guess is low')
+    guess = int(input('Guess a number: '))
     l += 1
+    
 print('You got it correct')
 
 
